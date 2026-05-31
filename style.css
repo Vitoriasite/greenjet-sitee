@@ -1,22 +1,141 @@
-body {
-  font-family: Arial, sans-serif;
-  max-width: 1200px;
-  margin: auto;
-  padding: 20px;
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
 }
 
-h1 {
-  color: #2e7d32;
+body{
+font-family: Arial, sans-serif;
+background:#ffffff;
+color:#4A4E53;
+line-height:1.6;
 }
 
-h2 {
-  color: #4caf50;
+header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 8%;
+background:white;
+box-shadow:0 2px 10px rgba(0,0,0,0.08);
+position:sticky;
+top:0;
 }
 
-button {
-  background: #4caf50;
-  color: white;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
+.logo img{
+height:90px;
+}
+
+nav a{
+text-decoration:none;
+margin:0 15px;
+color:#4A4E53;
+font-weight:bold;
+}
+
+nav a:hover{
+color:#58C341;
+}
+
+.botao-whats{
+background:#58C341;
+color:white;
+padding:12px 20px;
+border-radius:8px;
+text-decoration:none;
+font-weight:bold;
+}
+
+.hero{
+background:linear-gradient(
+rgba(0,0,0,0.5),
+rgba(0,0,0,0.5)
+),
+url("https://images.unsplash.com/photo-1500382017468-9049fed747ef");
+background-size:cover;
+background-position:center;
+height:80vh;
+display:flex;
+align-items:center;
+padding:0 8%;
+color:white;
+}
+
+.hero-texto{
+max-width:650px;
+}
+
+.hero h1{
+font-size:60px;
+line-height:1.1;
+margin-bottom:20px;
+}
+
+.hero p{
+font-size:22px;
+margin-bottom:30px;
+}
+
+.cta{
+background:#58C341;
+color:white;
+padding:15px 30px;
+text-decoration:none;
+border-radius:8px;
+font-weight:bold;
+}
+
+section{
+padding:80px 8%;
+}
+
+h2{
+font-size:42px;
+margin-bottom:30px;
+color:#2f6b31;
+}
+
+.sobre{
+background:#f7f7f7;
+}
+
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:25px;
+margin-top:30px;
+}
+
+.card{
+background:white;
+padding:30px;
+border-radius:15px;
+box-shadow:0 4px 15px rgba(0,0,0,0.08);
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-5px);
+}
+
+.card h3{
+color:#58C341;
+margin-bottom:15px;
+}
+
+.contato{
+background:#58C341;
+color:white;
+text-align:center;
+}
+
+.contato h2{
+color:white;
+}
+
+footer{
+background:#4A4E53;
+color:white;
+text-align:center;
+padding:30px;
 }
